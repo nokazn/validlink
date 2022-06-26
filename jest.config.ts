@@ -6,11 +6,6 @@ const config: Config = {
   transform: {
     '^.+\\.(t|j)sx?$': '@swc/jest',
   },
-  globals: {
-    'ts-jest': {
-      tsconfig: './tsconfig.test.json',
-    },
-  },
   moduleNameMapper: {
     '^~/(.*)$': path.resolve(__dirname, 'src/$1'),
   },
